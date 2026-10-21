@@ -1,0 +1,438 @@
+[
+ {
+  "category": "exact",
+  "query": "How do I apply for admission?",
+  "expected": "apply"
+ },
+ {
+  "category": "exact",
+  "query": "What is the fee structure?",
+  "expected": "fee"
+ },
+ {
+  "category": "exact",
+  "query": "How do I get a hostel room?",
+  "expected": "hostel"
+ },
+ {
+  "category": "exact",
+  "query": "What are the library timings?",
+  "expected": "library"
+ },
+ {
+  "category": "exact",
+  "query": "How can I check my exam results?",
+  "expected": "result"
+ },
+ {
+  "category": "exact",
+  "query": "What is the placement process?",
+  "expected": "placement"
+ },
+ {
+  "category": "paraphrase",
+  "query": "What steps should I follow to get enrolled in the institute?",
+  "expected": "apply"
+ },
+ {
+  "category": "paraphrase",
+  "query": "How much money do I need to give every year for B.Tech?",
+  "expected": "fee"
+ },
+ {
+  "category": "paraphrase",
+  "query": "Can I stay in a college hostel and how do I request it?",
+  "expected": "hostel"
+ },
+ {
+  "category": "paraphrase",
+  "query": "What hours is the reading library available?",
+  "expected": "library"
+ },
+ {
+  "category": "paraphrase",
+  "query": "Where will my semester marks be published?",
+  "expected": "result"
+ },
+ {
+  "category": "paraphrase",
+  "query": "Which companies come to recruit students and how do I register?",
+  "expected": "placement"
+ },
+ {
+  "category": "paraphrase",
+  "query": "Is it possible to settle fees using UPI?",
+  "expected": "fee_pay"
+ },
+ {
+  "category": "paraphrase",
+  "query": "Who is eligible for a merit based fee waiver?",
+  "expected": "scholar"
+ },
+ {
+  "category": "paraphrase",
+  "query": "What happens to my deposit if I leave the course early?",
+  "expected": "refund"
+ },
+ {
+  "category": "paraphrase",
+  "query": "How do I print my admit card for the exams?",
+  "expected": "hall_ticket"
+ },
+ {
+  "category": "paraphrase",
+  "query": "What is the minimum percentage of classes I must attend?",
+  "expected": "attendance"
+ },
+ {
+  "category": "paraphrase",
+  "query": "Which wireless network should I join on campus?",
+  "expected": "wifi"
+ },
+ {
+  "category": "paraphrase",
+  "query": "I can't sign in to the student portal, what now?",
+  "expected": "portal_reset"
+ },
+ {
+  "category": "paraphrase",
+  "query": "What time are visitors allowed in the hostel?",
+  "expected": "hostel_time"
+ },
+ {
+  "category": "paraphrase",
+  "query": "Do you run buses from the city to college?",
+  "expected": "transport"
+ },
+ {
+  "category": "paraphrase",
+  "query": "Who should I approach if someone is bullying me?",
+  "expected": "anti_ragging"
+ },
+ {
+  "category": "paraphrase",
+  "query": "What did the highest salary offer look like last year?",
+  "expected": "placement_stats"
+ },
+ {
+  "category": "paraphrase",
+  "query": "How do I replace a lost student card?",
+  "expected": "idcard"
+ },
+ {
+  "category": "paraphrase",
+  "query": "Where do I ask for a letter proving that I study here?",
+  "expected": "bonafide"
+ },
+ {
+  "category": "paraphrase",
+  "query": "How many days can I keep a library book?",
+  "expected": "library_borrow"
+ },
+ {
+  "category": "typos",
+  "query": "how much tuiton fee do i hav to pay",
+  "expected": "fee"
+ },
+ {
+  "category": "typos",
+  "query": "admision proces",
+  "expected": "apply"
+ },
+ {
+  "category": "typos",
+  "query": "hostal room alotment",
+  "expected": "hostel"
+ },
+ {
+  "category": "typos",
+  "query": "libary timmings",
+  "expected": "library"
+ },
+ {
+  "category": "typos",
+  "query": "exam resutl kab ayega",
+  "expected": "result"
+ },
+ {
+  "category": "typos",
+  "query": "pasword reset for portl",
+  "expected": "portal_reset"
+ },
+ {
+  "category": "typos",
+  "query": "scholarsip for meritt students",
+  "expected": "scholar"
+ },
+ {
+  "category": "typos",
+  "query": "attendence shortge rules",
+  "expected": "attendance"
+ },
+ {
+  "category": "typos",
+  "query": "placment pakage lpa",
+  "expected": "placement_stats"
+ },
+ {
+  "category": "typos",
+  "query": "refud policy",
+  "expected": "refund"
+ },
+ {
+  "category": "short",
+  "query": "fees",
+  "expected": "fee"
+ },
+ {
+  "category": "short",
+  "query": "hostel",
+  "expected": "hostel"
+ },
+ {
+  "category": "short",
+  "query": "exam",
+  "expected": "exam"
+ },
+ {
+  "category": "short",
+  "query": "library",
+  "expected": "library"
+ },
+ {
+  "category": "short",
+  "query": "wifi",
+  "expected": "wifi"
+ },
+ {
+  "category": "short",
+  "query": "scholarship",
+  "expected": "scholar"
+ },
+ {
+  "category": "short",
+  "query": "placements",
+  "expected": "placement"
+ },
+ {
+  "category": "short",
+  "query": "bonafide",
+  "expected": "bonafide"
+ },
+ {
+  "category": "long",
+  "query": "Hi, I just got my admission confirmed and I am planning to move from another city so I wanted to know how I should go about applying for a room in the hostel and what the deposit is",
+  "expected": "hostel"
+ },
+ {
+  "category": "long",
+  "query": "My friend told me that I might not be allowed to write the exam if my attendance is low, so can you tell me what the minimum percentage is and whether medical leave helps",
+  "expected": "attendance"
+ },
+ {
+  "category": "long",
+  "query": "I am in my final year and I want to know how the whole campus recruitment thing works, like who can sit for it and when do companies start coming",
+  "expected": "placement"
+ },
+ {
+  "category": "long",
+  "query": "I was wondering if there is any possibility of getting some concession on the tuition if I scored well in the entrance test",
+  "expected": "scholar"
+ },
+ {
+  "category": "ambiguous",
+  "query": "Tell me about the college",
+  "expected": "AMBIG"
+ },
+ {
+  "category": "ambiguous",
+  "query": "help",
+  "expected": "AMBIG"
+ },
+ {
+  "category": "ambiguous",
+  "query": "timings",
+  "expected": "AMBIG"
+ },
+ {
+  "category": "ambiguous",
+  "query": "how much",
+  "expected": "AMBIG"
+ },
+ {
+  "category": "ambiguous",
+  "query": "what are the rules",
+  "expected": "AMBIG"
+ },
+ {
+  "category": "ambiguous",
+  "query": "form",
+  "expected": "AMBIG"
+ },
+ {
+  "category": "unknown",
+  "query": "Is there a swimming pool on campus?",
+  "expected": null
+ },
+ {
+  "category": "unknown",
+  "query": "What is the dress code for classes?",
+  "expected": null
+ },
+ {
+  "category": "unknown",
+  "query": "Can I bring my car to college?",
+  "expected": null
+ },
+ {
+  "category": "unknown",
+  "query": "Do you offer a PhD in physics?",
+  "expected": null
+ },
+ {
+  "category": "unknown",
+  "query": "When is the annual sports day?",
+  "expected": null
+ },
+ {
+  "category": "unknown",
+  "query": "Is there a gym in the hostel?",
+  "expected": null
+ },
+ {
+  "category": "unknown",
+  "query": "How do I join the coding club?",
+  "expected": null
+ },
+ {
+  "category": "unknown",
+  "query": "What is the college's NAAC grade?",
+  "expected": null
+ },
+ {
+  "category": "unrelated",
+  "query": "What is the capital of France?",
+  "expected": null
+ },
+ {
+  "category": "unrelated",
+  "query": "Who won the cricket world cup?",
+  "expected": null
+ },
+ {
+  "category": "unrelated",
+  "query": "weather in Mumbai today",
+  "expected": null
+ },
+ {
+  "category": "unrelated",
+  "query": "write me a poem about rain",
+  "expected": null
+ },
+ {
+  "category": "unrelated",
+  "query": "how to cook pasta",
+  "expected": null
+ },
+ {
+  "category": "unrelated",
+  "query": "what is 25 times 4",
+  "expected": null
+ },
+ {
+  "category": "unrelated",
+  "query": "tell me a joke",
+  "expected": null
+ },
+ {
+  "category": "unrelated",
+  "query": "bitcoin price",
+  "expected": null
+ },
+ {
+  "category": "followup",
+  "query": "what about the deposit?",
+  "expected": "hostel_fee",
+  "last": "hostel"
+ },
+ {
+  "category": "followup",
+  "query": "and the timings?",
+  "expected": "hostel_time",
+  "last": "hostel"
+ },
+ {
+  "category": "followup",
+  "query": "how do I pay it?",
+  "expected": "fee_pay",
+  "last": "fee"
+ },
+ {
+  "category": "followup",
+  "query": "what if I want to cancel?",
+  "expected": "refund",
+  "last": "fee"
+ },
+ {
+  "category": "followup",
+  "query": "and when are they published?",
+  "expected": "result",
+  "last": "exam"
+ },
+ {
+  "category": "followup",
+  "query": "can I renew it?",
+  "expected": "library_borrow",
+  "last": "library"
+ },
+ {
+  "category": "multilingual",
+  "query": "फीस कितनी है",
+  "expected": "fee"
+ },
+ {
+  "category": "multilingual",
+  "query": "हॉस्टल में रूम कैसे मिलेगा",
+  "expected": "hostel"
+ },
+ {
+  "category": "multilingual",
+  "query": "hostel ki fees kitni hai",
+  "expected": "hostel_fee"
+ },
+ {
+  "category": "multilingual",
+  "query": "exam kab hai",
+  "expected": "exam"
+ },
+ {
+  "category": "multilingual",
+  "query": "placement kaise hota hai",
+  "expected": "placement"
+ },
+ {
+  "category": "multilingual",
+  "query": "library kab khulti hai",
+  "expected": "library"
+ },
+ {
+  "category": "multilingual",
+  "query": "परीक्षा का निकाल कुठे पाहायचा",
+  "expected": "result"
+ },
+ {
+  "category": "multilingual",
+  "query": "शिष्यवृत्ती कशी मिळेल",
+  "expected": "scholar"
+ },
+ {
+  "category": "multilingual",
+  "query": "scholarship kaise milegi",
+  "expected": "scholar"
+ },
+ {
+  "category": "multilingual",
+  "query": "प्रवेश कसा घ्यावा",
+  "expected": "apply"
+ }
+]

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ name }}</title>
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="chat-page">
+<a class="skip" href="#composer-input">Skip to question box</a>
+<div class="app">
+  <aside class="side" id="side" aria-label="Suggestions and history">
+    <div class="brand"><span class="mark" aria-hidden="true"></span><div><h1 id="brand-name">{{ name }}</h1><p class="sub">Answers only from the verified FAQ</p></div></div>
+    <section><h2>Popular questions</h2><ul class="list" id="popular"></ul></section>
+    <section><div class="row"><h2>Your questions</h2><button class="link" id="clear-history" type="button">Clear</button></div><ul class="list" id="history"><li class="muted">Nothing asked yet.</li></ul></section>
+    <p class="fine">Questions are logged (personal details masked) so administrators can fill gaps in the FAQ.</p>
+  </aside>
+  <main class="main">
+    <header class="top">
+      <button class="icon" id="open-side" type="button" aria-label="Open menu" aria-controls="side" aria-expanded="false"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <div class="status" id="net" role="status"></div>
+      <button class="icon" id="theme" type="button" aria-label="Switch to dark theme"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg></button>
+    </header>
+    <div class="log-wrap">
+      <div class="log" id="log" role="log" aria-live="polite" aria-label="Conversation" tabindex="0">
+        <div class="empty" id="empty">
+          <h2>Ask anything about the institute</h2>
+          <p>Type a question in English, Hindi, Marathi or Hinglish. If the FAQ doesn't cover it, I'll say so instead of guessing.</p>
+          <div class="chips" id="starter"></div>
+        </div>
+      </div>
+      <button class="jump" id="jump" type="button" hidden>Jump to latest</button>
+    </div>
+    <form class="composer" id="composer" autocomplete="off">
+      <label class="sr" for="composer-input">Your question</label>
+      <textarea id="composer-input" rows="1" maxlength="500" placeholder="Ask a question…  ( / to focus )" enterkeyhint="send"></textarea>
+      <button type="button" class="icon" id="mic" aria-label="Speak your question" hidden><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+      <button type="submit" class="send" id="send">Ask</button>
+    </form>
+  </main>
+</div>
+<div class="scrim" id="scrim" hidden></div>
+<script src="{{ url_for('static', filename='chat.js', v=2) }}" defer></script>
+</body>
+</html>

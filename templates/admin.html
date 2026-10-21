@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Admin · {{ name }}</title><meta name="color-scheme" content="light dark">
+<meta name="csrf" content="{{ csrf_token() }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body class="admin-page">
+<header class="atop">
+  <div class="brand"><span class="mark" aria-hidden="true"></span><div><h1>{{ name }}</h1><p class="sub">Administration · signed in as {{ user }}</p></div></div>
+  <div class="row"><a class="btn ghost" href="{{ url_for('index') }}">Open assistant</a><button class="icon" id="theme" type="button" aria-label="Toggle theme">◐</button><button class="btn ghost" id="logout" type="button">Sign out</button></div>
+</header>
+<nav class="tabs" role="tablist" aria-label="Admin sections" id="tabs"></nav>
+<main id="panel" class="panel" tabindex="-1"></main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog id="dlg"></dialog>
+<script src="{{ url_for('static', filename='admin.js') }}" defer></script>
+</body></html>

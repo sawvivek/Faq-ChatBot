@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Admin sign in · {{ name }}</title>
+<meta name="color-scheme" content="light dark"><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body class="login-page">
+<main class="login">
+  <div class="brand"><span class="mark" aria-hidden="true"></span><div><h1>{{ name }}</h1><p class="sub">Administrator sign in</p></div></div>
+  <form method="post" action="{{ url_for('login') }}">
+    <input type="hidden" name="csrf" value="{{ csrf_token() }}">
+    {% if error %}<p class="err" role="alert">{{ error }}</p>{% endif %}
+    <label>Username<input name="username" autocomplete="username" required autofocus></label>
+    <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+    <button class="send" type="submit">Sign in</button>
+  </form>
+  <p class="fine"><a href="{{ url_for('index') }}">Back to the assistant</a></p>
+</main>
+<script src="{{ url_for('static', filename='theme.js') }}"></script>
+</body></html>

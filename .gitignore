@@ -1,0 +1,4 @@
+data/faq.db*
+data/secret.key
+__pycache__/
+*.pyc
